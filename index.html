@@ -6,33 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
     
     <nav id="navbar" class="nav">
-        <ul>
+        <ul class="navbar-list">
           <li><a class="nav-link" href="#welcome-section">Home</a></li>
-          <li><a class="nav-link" href="#recipes">Recipes</a></li>
+          
+          <li class="menu-recipes"><a class="nav-link" href="#recipes">Recipes</a>
+            <! –– start of the dropdown menu ––>
+            <ul class="dropdown-menu">
+                <li><a href="#">Macaroni Salad</a></li>
+                <li><a href="#">Chicken Tacos</a></li>
+                <li><a href="#">Peach Pie</a></li>
+          </ul>
+        </li>
+        <! -- end of the dropdown menu -->
           <li><a class="nav-link" href="#about">About Us</a></li>
         </ul>
+
+        <div id="search">
+          <input type="text" placeholder=" search.."></input>
+          <i class="fas fa-search"></i>
+        </div>
+
+        
       </nav>
 
-        <h1>Odin Recipes: Healthy Cooking Recipes and the right Nutrition</h1>
+        <h1>Healthy Cooking Recipes <br> and the right Nutrition</h1>
 
         <div id="recipes">
               
        <a id="recipe-id" target="_blank" href="recipes/tuna-salad.html">
         <img width="300" src="https://www.bowlofdelicious.com/wp-content/uploads/2017/04/Greek-Pasta-Salad-with-Herb-Vinaigrette-1.jpg" alt="tuna-salad">
+        <br>
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         <p class="recipe-title">Tuna Macaroni Salad</p>
+        
       </a>               
                         
       <a id="recipe-id" target="_blank" href="recipes/chicken-tacos.html">
         <img width="300" src="https://getonmyplate.com/wp-content/uploads/2023/04/ground-chicken-tacos-baked-14.jpg" alt="chicken-tacos">
+        <br>
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         <p class="recipe-title">Chicken Tacos</p>
+        
       </a>
        
       <a id="recipe-id" target="_blank" href="recipes/peach-pie.html">
         <img width="300" src="https://www.hummingbirdhigh.com/wp-content/uploads/attachments/IMG_5664.jpg" alt="chicken-tacos">
+        <br>
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         <p class="recipe-title">Peach Pie</p>
       </a>
         

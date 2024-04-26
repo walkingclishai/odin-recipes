@@ -5,6 +5,9 @@ body {
 
   h1{
     text-align: center;
+    font-size: 5.3rem;
+    font-family: Tahoma;
+    color: rgba(255,183,126,255);
   }
 
   nav{
@@ -14,21 +17,60 @@ body {
     position: sticky;
     top: 0;
     }
-
-    ul{
+     ul{
       list-style-type: none;
+     }
+    .navbar-list{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin-right: 2rem;
-      
-      
-    }
+      }
+
     .nav-link{
       font-weight: bold;
       font-size: 22px;
       color: white;
     }
-  
+    .menu-recipes {
+      position: relative;
+  }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: pink;
+      padding: 10px;
+      border-radius: 5px;
+      
+  }
+
+  .menu-recipes:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+  margin-bottom: 2px; 
+  padding-bottom: 2px; 
+  border-bottom: 1px solid #fff; 
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+/* I needed to remove the border from the last li*/
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a{
+  color: white;
+}
+
+.dropdown-menu li:hover, a:hover{
+  color: pink;
+  background-color: grey;
+}
+
   #recipes{
     display: flex;
     justify-content: center;
@@ -43,6 +85,28 @@ body {
 
   a{
     text-decoration: none;
+  }
+
+  #search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-right: 6px;
+  }
+
+  input{
+    height: 20px;
+    width: 130px;
+    border: none;
+	  border-radius: 20px;
+    outline: none;
+  }
+
+  .stars {
+    color: orange; 
+    font-size: 20px;
+    text-align: center;
   }
    
   
