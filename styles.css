@@ -66,7 +66,7 @@ body {
   color: white;
 }
 
-.dropdown-menu li:hover, a:hover{
+.dropdown-menu > li:hover{
   color: pink;
   background-color: grey;
 }
@@ -109,6 +109,50 @@ body {
     text-align: center;
   }
    
+  #categories{
+    background-color: aquamarine;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+  }
   
+  section > ul{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+  }
   
+  /* title animation */
+
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 25%;
+    display: inline-block;
+    color: #1D3557;
+  }
+  #rolltext{
+    display:flex;
+    justify-content: left;
+  }
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    
+  }
   
